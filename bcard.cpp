@@ -13,10 +13,10 @@ struct v {
         return v(xRay+r.xRay,yankee+r.yankee,zulu+r.zulu);
     }
     v operator*(f r) {
-        return v (xRay*r,yankee*r,zulu*r);
+        return v (xRay*r, yankee*r, zulu*r);
     }
     f operator% (v r){
-        return xRay*r.xRay+yankee*r.yankee+zulu*r.zulu;}v() {
+        return xRay*r.xRay+yankee*r.yankee + zulu*r.zulu;}v() {
         }
     v operator^(v r) {
         return v(yankee*r.zulu-zulu*r.yankee,zulu*r.xRay-xRay*r.zulu,xRay*r.yankee-yankee*r.xRay);
